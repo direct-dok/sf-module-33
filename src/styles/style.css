@@ -1,0 +1,556 @@
+div#content {
+  padding: 30px 0 50px 0;
+}
+
+.wrapper-app .navbar {
+  background: #0067A3 !important;
+}
+
+.wrapper-app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  flex: auto;
+  max-width: 100%;
+  background: #0079BF;
+}
+
+#content {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+#content h1, 
+#content h2 {
+  color: #fff;
+}
+
+#app-login-btn {
+  width: 160px;
+}
+
+.pd_0 {
+  padding: 0;
+  margin: 0;
+}
+
+/* .navbar>.container, .navbar>.container-fluid {
+  justify-content: space-around;
+} */
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.user-login-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.user-login {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.row:hover {
+  cursor: pointer;
+}
+
+.user-login {
+  margin: 0;
+}
+
+.avatar-block {
+  margin: 0 10px 0 0;
+}
+
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  right: 25px;
+  top: calc(100% + 6px);
+  max-width: 200px;
+  width: 200px;
+}
+
+.nav-user-login {
+  position: relative;
+  margin: 0;
+  padding: 20px;
+  background-color: white;
+  list-style: none;
+  border-radius: 10px;
+}
+
+.nav-user-login::before {
+  content: '';
+  position: absolute;
+  right: 19px;
+  top: -9px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.nav-user-login-link {
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+}
+
+.hello-user {
+  margin: 0 8px 0 0;
+  color: #fff;
+}
+
+.hello-user__name {
+  font-weight: 900;
+}
+
+
+/* Start Task */
+
+.task {
+  margin: 30px 0 0 0;
+}
+
+.task__item {
+  margin: 0 10px;
+  padding: 15px;
+  background: #EBECF0;
+  border-radius: 10px;
+}
+
+.task__drop-field {
+  margin: 0 0 10px;
+  padding: 15px;
+  border: 2px dashed #b3b3b3;
+}
+
+.task__title {
+  font-size: 1.2em;
+  font-weight: 900;
+  margin: 0 0 10px;
+}
+
+.task__drop-elem {
+  position: relative;
+  background: #fff;
+  margin: 0 0 12px;
+  padding: 10px 25px 10px 10px;
+  border-radius: 5px;
+  cursor: move;
+}
+.task__drop-elem:last-child {
+  margin: 0;
+}
+
+.task__drop-elem p {
+  margin: 0;
+}
+
+
+.task__edit {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.task__edit:hover {
+  cursor: pointer;
+  background: #d9d9d9;
+}
+
+.task__edit svg {
+  width: 60%;
+  height: 60%;
+  fill: #bdbdbd;
+}
+
+.task__edit:hover svg {
+  fill: #333;
+}
+
+.task__editor {
+  position: absolute;
+  top: 0;
+  left: -5%;
+  width: 110%;
+  height: 130%;
+  z-index: 2;
+}
+
+.task__editor-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.task__destroy-editor {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+}
+
+.task__textarea-editor {
+  display: block;
+  margin: 0 0 10px 0;
+  padding: 10px;
+  width: 100%;
+  min-height: 100px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+
+}
+
+.task__save-editor {
+  height: 40px;
+  padding: 0 10px;
+  color: #fff;
+  background: #0f63a3;
+  border-radius: 5px;
+  border: none;
+}
+
+.task__textarea {
+  display: none;
+  width: 100%;
+  height: 100px;
+  margin: 0 0 10px;
+  padding: 15px;
+  border: none;
+  outline: none;
+
+}
+
+.task__button-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.task__close-button {
+  display: none;
+  background: transparent;
+  border: none;
+  width: 26px;
+  height: 26px;
+  margin: 0 0 0 10px;
+}
+
+.task__add-task-button {
+  display: none;
+  font-weight: 900;
+  color: #fff;
+  background: #306eff;
+  border: none;
+  border-radius: 10px;
+  padding: 0 10px;
+  height: 40px;
+}
+
+.task__add-button {
+  font-weight: 900;
+  background: transparent;
+  border: none;
+}
+
+.task__close-button:hover svg {
+  fill: #878787;
+}
+
+/* End Task */
+
+
+/* Start admin panel */
+
+.back-to-user-list {
+  
+}
+
+.users {
+  margin: 20px 0 0 0;
+}
+
+.users__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.users__item:last-child {
+  border: none;
+}
+
+.users__name {
+  font-weight: 900;
+  font-size: 1.4em;
+  color: #fff;
+}
+
+.users__button-more, 
+.users__button-delete,
+.back-to-user-list, 
+.form-add-user__add-button {
+  font-size: .9em;
+  color: #fff;
+  border: none;
+  padding: 0 15px;
+  height: 44px;
+  border-radius: 7px;
+  transition: .3s;
+}
+
+.users__button-more, 
+.back-to-user-list, 
+.form-add-user__add-button {
+  background: #0f63a3;
+}
+
+.users__button-delete {
+  background: #9e0606;
+  
+}
+
+.admin-panel__wrapper {
+  margin: 30px 0 0 0;
+}
+
+.admin-panel__tasks-wrapper {
+  margin: 0 0 30px 0;
+  padding: 0 20px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.admin-panel__tasks-wrapper:last-child {
+  border: none;
+}
+
+.admin-panel__task-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.admin-panel__tasks-title {
+  font-weight: 900;
+  text-align: center;
+}
+
+.admin-panel__task-item {
+  position: relative;
+  width: calc(25% - 20px);
+  margin: 0 20px 30px 0;
+  padding: 20px 30px;
+  background: #f5f5f5;
+  border-radius: 10px;
+}
+
+.admin-panel__control-block {
+  display: flex;
+  margin: 0 0 10px 0;
+}
+
+.admin-panel__edit-task, 
+.admin-panel__delete-task {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  background: #b8b8b8;
+  border: none;
+  border-radius: 5px;
+} 
+
+.admin-panel__edit-task svg, 
+.admin-panel__delete-task svg {
+  width: 14px;
+  height: 14px;
+  fill: #8f8f8f;
+  transition: .3s;
+}
+
+.admin-panel__edit-task:hover svg, 
+.admin-panel__delete-task:hover svg {
+  fill: #5e5e5e;
+}
+
+.admin-panel__delete-task {
+
+}
+
+.admin-panel__edit-task {
+  margin: 0 10px 0 0;
+}
+
+.admin-panel__task-wrapper {
+  
+}
+
+.admin-panel__task-text {
+  font-size: .9em;
+  margin: 0;
+}
+
+.add-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  margin: 20px 0 0 0;
+  background: #18488c;
+  border-radius: 50%;
+  border: none;
+  opacity: .7;
+  transition: .3s;
+}
+
+.add-user:hover {
+  opacity: 1;
+}
+
+.plus-user {
+  color: #fff;
+}
+
+.plus-icon {
+  font-weight: 900;
+}
+
+.text-plus-button {
+  font-size: 0.7em;
+  text-transform: uppercase;
+}
+
+.form-add-user {
+  margin: 30px 0;
+  max-width: 300px;
+
+}
+
+.form-add-user__user-login {
+  margin: 0 0 10px;
+}
+
+.form-add-user__user-login label, 
+.form-add-user__user-login input {
+  display: block;
+  width: 100%;
+}
+
+.form-add-user__user-login label {
+  font-weight: 900;
+  font-size: 0.8em;
+  margin: 0 0 5px;
+}
+
+.form-add-user__user-login input {
+  height: 44px;
+  padding: 0 10px;
+  outline: none;
+}
+
+/* End admin panel */
+
+/* Start footer */
+
+.footer {
+  background: #0067A3 !important;
+  color: #fff;
+  padding: 15px 10px;
+}
+
+.footer__content {
+  display: flex;
+  align-items: center;
+}
+
+.footer__name {
+  font-size: 1.25rem;
+}
+
+.footer__progress-list {
+  display: flex;
+  margin: 0;
+  list-style: none;
+}
+
+
+.footer__progress-list li {
+  margin: 0 15px 0 0;
+}
+
+/* End footer */
+
+
+/* JS style */
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.rotateRow {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.selected {
+  opacity: .7;
+  background: #333;
+  color: #333;
+}
+
+.selected .task__edit {
+  display: none;
+}
+
+.colorDrop {
+  background: #edc8a1;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .7);
+  z-index: 1;
+}
+
+.border-error {
+  border: 1px solid red;
+}
+
+.error-text {
+  color: red;
+}
